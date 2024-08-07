@@ -32,9 +32,9 @@ with col1:
     Research = st.sidebar.slider("Research", 1.0, 10000.0, 0.5)
                           
 st.text('')
-if st.button("Sales Prediction"):
+if st.button("Chance To Get Admission"):
     result= clf.predict(np.array([[GRE,TOEFL,University,SOP,LOR,CGPA,Research]]))
     st.text(result[0])
     
-st.markdown("Developed  at Madhu Mishra")
+st.markdown("Developed at Madhu Mishra")
                   
